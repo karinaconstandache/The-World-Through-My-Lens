@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book a Session</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .form-container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-container h2 {
+        color: white;
+        font-family: "Lucida Calligraphy";
+        font-size: 25px;
+    }
+
+    .form-container label {
+        color: white;
+        font-family: "New Courier";
+        font-size: 15px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container select,
+    .form-container textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-container textarea {
+      height: 100px;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #0c2327;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function showConfirmation() {
+      alert("Now you are one step closer to your dream photoshoot!");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Main Page</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book a Session</a></li>
+      </ul>
+    </nav>
+    <h1>The World Through My Lens</h1>
+  </header>
+
+  <div class="form-container">
+    <h2>Book a Session</h2>
+    <form onsubmit="showConfirmation()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Date of Appointment:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="type">Type of Shooting:</label>
+      <select id="type" name="type" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="portraits">Portraits</option>
+        <option value="sports">Sports</option>
+        <option value="event">Event</option>
+      </select>
+
+      <label for="additional-info">Anything else you would like me to know?</label>
+      <textarea id="additional-info" name="additional-info" maxlength="300"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #182c36e7;
+  }
+  
+  header {
+    background-color: #ffffff;
+    background-image: url('portrete/camera2.jpg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    color:#274a5b;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lucida Handwriting';
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .grid {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%; 
+  }
+  
+  .grid-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #grid1 .grid-content {
+    background-image: url('portrete/portret1.jpg');
+  }
+  
+  #grid2 .grid-content {
+    background-image: url('sport/sport1.jpg');
+  }
+  
+  #grid3 .grid-content {
+    background-image: url('evenimente/event1.jpg');
+  }
+  #grid4 .grid-content {
+    background-image: url('portrete/portret2.jpg');
+  }
+  #grid5 .grid-content {
+    background-image: url('portrete/portret3.jpg');
+  }
+  #grid6 .grid-content {
+    background-image: url('portrete/portret4.jpg');
+  }
+  #grid7 .grid-content {
+    background-image: url('portrete/portret5.jpg');
+  }
+  #grid8 .grid-content {
+    background-image: url('portrete/portret6.jpg');
+  }
+  #grid9 .grid-content {
+    background-image: url('portrete/portret7.jpg');
+  }
+  #grid10 .grid-content {
+    background-image: url('portrete/portret1.jpg');
+  }
+  #grid11 .grid-content {
+    background-image: url('portrete/portret9.jpg');
+  }
+  #grid12 .grid-content {
+    background-image: url('portrete/portret10.jpg');
+  }
+  #grid13 .grid-content {
+    background-image: url('portrete/portret11.jpg');
+  }
+  #grid14 .grid-content {
+    background-image: url('portrete/portret12.jpg');
+  }
+  #grid15 .grid-content {
+    background-image: url('portrete/portret13.jpg');
+  }
+
+  #grid04 .grid-content {
+    background-image: url('sport/sport1.jpg');
+  }
+  #grid05 .grid-content {
+    background-image: url('sport/sport2.jpg');
+  }
+  #grid06 .grid-content {
+    background-image: url('sport/sport3.jpg');
+  }
+  #grid07 .grid-content {
+    background-image: url('sport/sport4.jpg');
+  }
+  #grid08 .grid-content {
+    background-image: url('sport/sport5.jpg');
+  }
+  #grid09 .grid-content {
+    background-image: url('sport/sport6.jpg');
+  }
+  #grid010 .grid-content {
+    background-image: url('sport/sport7.jpg');
+  }
+  #grid011 .grid-content {
+    background-image: url('sport/sport8.jpg');
+  }
+  #grid012 .grid-content {
+    background-image: url('sport/sport9.jpg');
+  }
+  #grid013 .grid-content {
+    background-image: url('sport/sport10.jpg');
+  }
+  #grid014 .grid-content {
+    background-image: url('sport/sport11.jpg');
+  }
+  #grid015 .grid-content {
+    background-image: url('sport/sport12.jpg');
+  }
+
+  #grid004 .grid-content {
+    background-image: url('evenimente/event1.jpg');
+  }
+  #grid005 .grid-content {
+    background-image: url('evenimente/event2.jpg');
+  }
+  #grid006 .grid-content {
+    background-image: url('evenimente/event3.jpg');
+  }
+  #grid007 .grid-content {
+    background-image: url('evenimente/event4.jpg');
+  }
+  #grid008 .grid-content {
+    background-image: url('evenimente/event5.jpg');
+  }
+  #grid009 .grid-content {
+    background-image: url('evenimente/event6.jpg');
+  }
+  #grid0010 .grid-content {
+    background-image: url('evenimente/event7.jpg');
+  }
+  #grid0011 .grid-content {
+    background-image: url('evenimente/event8.jpg');
+  }
+  #grid0012 .grid-content {
+    background-image: url('evenimente/event9.jpg');
+  }
+  #grid0013 .grid-content {
+    background-image: url('evenimente/event10.jpg');
+  }
+  #grid0014 .grid-content {
+    background-image: url('evenimente/event11.jpg');
+  }
+  #grid0015 .grid-content {
+    background-image: url('evenimente/event12.jpg');
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  .menu-toggle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 6px;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-toggle.active span {
+    transform: rotate(45deg);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 998;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding-left: 20px; 
+  }
+
+.menu-toggle.active span {
+  background-color: #fff;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+header {
+  position: relative;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 6px;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle.active span {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 998;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px; 
+}
